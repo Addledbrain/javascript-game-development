@@ -1,0 +1,54 @@
+body      { font-family: Helvetica, sans-serif; }
+
+navbar    {
+            text-decoration: none;
+          }
+#game   {
+            margin: 1em auto;
+            padding: 1em;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #F8F8F8;
+          }
+
+#stats    {
+          display: none;
+          }
+
+#canvas   {
+            display: inline-block;
+            vertical-align: top;
+          /*  background: url(texture.jpg); */
+            box-shadow: 8px 8px 8px #999;
+            border: 1px solid #333;
+          }
+
+#menu     {
+            display: inline-block;
+            vertical-align: left;
+            position: relative;
+            margin-right: 48px;
+          }
+
+#menu p   { margin: 0.5em 0; text-align: center; }
+
+#menu p a { text-decoration: none; color: black; }
+
+#upcoming { display: block; margin: 0 auto; background-color: #E0E0E0; }
+
+#score    { color: green; font-weight: bold; vertical-align: middle; }
+
+#rows     { color: darkblue; font-weight: bold; vertical-align: middle; }
+
+@media screen and (min-width: 400px) and (min-height: 400px)  {
+  #game { font-size: 1.00em; width: 350px; }
+  #menu { width: 150px; height: 300px; }
+  #upcoming { width:  75px; height:  75px; }
+  #canvas { width: 150px; height: 300px; }
+}
+@media screen and (min-width: 1280px) and (min-height: 720px)  {
+  #game { font-size: 1.25em; width: 900px; }
+  #menu { width: 250px; height: 400px; }
+  #upcoming { width: 200px; height: 200px; }
+  #canvas { width: 400px; height: 800px; }
+}
